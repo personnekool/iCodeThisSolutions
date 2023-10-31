@@ -22,7 +22,7 @@ body{
   width: 2rem;
 }
 .card{
-  width: 50%;
+  width: 60%;
   height: 65%;
   background-color: white;
   border-radius: 1rem;
@@ -40,8 +40,6 @@ h5,
   display: inline-block;
   cursor: pointer;
 }
-.s-item select{
-}
 
 .expand{
   position: absolute;
@@ -49,6 +47,57 @@ h5,
   top: 0.9rem;
   cursor: pointer;
   pointer-events: none;
+}
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  border: 1px solid #eaeced;
+  border-radius: 8px;
+  top: 2rem;
+  left: 2rem;
+}
+.switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #9398ad;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+  background-color: #894187;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .b-t{
@@ -70,6 +119,9 @@ p{
   justify-content: start;
   gap: 1rem;
 }
+.item{
+  display: flex;
+}
 button{
   cursor: pointer;
   padding: 0.4rem 1rem;
@@ -86,8 +138,10 @@ button{
   color: black;
 }
 hr{
-  width: 100%;
+  width: 85%;
+  margin: 1rem 0 1rem 0;
   color: #eaeced;
+
 }
 .l-i{
   background-color: #f24b8d;
