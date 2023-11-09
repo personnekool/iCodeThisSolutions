@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Component 4</title>
+</head>
+<body>
+  <a  href="../../index.html">
+    <img class="close-btn" src="./assets/close.svg" alt="Close">
+  </a>
+  <div class="container">
+    <div class="to-do-folder">
+      <input type="text" name="search" id="search" placeholder="Search">
+      <div class="to-do-header">
+        <ul class="items">
+          <li class="item-to-do" id="reminders">
+            <span class="do-title">REMINDERS</span>
+            <span class="do-counter">1</span>
+          </li>
+          <li class="item-to-do" id="list">
+            <span class="do-title">TO DO LIST</span>
+            <span class="do-counter">1</span>
+          </li>
+          <li class="item-to-do" id="shopping" value="shopping">
+            <span class="do-title">SHOPPING LIST</span>
+            <span class="do-counter">4</span>
+          </li>
+          <li class="item-to-do" id="other">
+            <span class="do-title">OTHER</span>
+            <span class="do-counter">1</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="to-do-elem" id="to-do-elem">
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+*{
+  font-size: 1rem;
+}
+body{
+  background-color: #fb9c7e;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.container{
+  --_bg-do:#344750;
+  --_color-do:white;
+  --_counter-do:#2c4149;
+  place-self: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 50%;
+  height: 80%;
+}
+#search{
+  background-color: #41545d;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+  border: none;
+  color: #95999b;
+}
+.to-do-header ul{
+  list-style-type:none;
+}
+.items{
+  padding: 0rem;
+}
+.item-to-do{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  color: var(--_color-do);
+  background-color: var(--_bg-do);
+  cursor: pointer;
+}
+.item-to-do:hover{
+  --_color-do:#344750;
+  --_bg-do:white;
+  --_counter-do:#d7dede;
+}
+.do-title{
+  padding-left: 0.5rem;
+}
+.do-counter{
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  background-color: var(--_counter-do);
+  text-align: center;
+}
+.to-do-folder{
+  grid-column: 1 / 2;
+  background-color: #344750;
+}
+.to-do-elem{
+  grid-column: 2 / 3;
+  background-color: #ffffff;
+}
+.group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eef2f3;
+  margin-bottom: 0.05rem;
+}
+.group-title{
+  color: #5f696a;
+  padding: 0 0 0 1rem;
+}
+.to-do-elem ul{
+  list-style-type: none;
+}
+.group-content{
+  color: #839494;
+  padding: 1rem 0 1rem 2rem;
+  cursor: pointer;
+  width:90%;
+}
+.done{
+  background-image: url(./assets/line.svg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 1rem;
+}
+.toggle-menu{
+  cursor: pointer;
+  width: 2rem;
+}
+.GROCERIES,
+.FAMILY,
+.WORK,
+.LEARN{
+display: none;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.show{
+  display: contents;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background-color: white;
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+  *{
+    font-size: 0.7rem;
+  }
+  body{
+    justify-content: flex-start;
+  }
+  #search{
+    width: 7rem;
+  }
+  .container{
+    width: 100%;
+  }
+}
