@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- License: MIT. 
+Made by Mauricio Bedoya -->
+<svg width="100px" height="100px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="90" height="90" x="1" y="1" rx="5" ry="5" stroke="white" stroke-width="3" fill="white"/>
+<path d="M20 50 L40 70 L80 20" stroke="#8344d5" stroke-width="5"/>
+</svg>

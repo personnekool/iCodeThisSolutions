@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="50" viewBox="0 0 40 50" fill="none">
+<path d="M 5 0 L 35 30" stroke="white" stroke-width="3" />
+<path d="M 5 30 L 35 0" stroke="white" stroke-width="3" />
+<text x="0" y="45" fill="white">Close</text>
+</svg>

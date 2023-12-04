@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bg-100: rgba(44, 36, 70, 255);
+  --clr-bg-200: #f9755a;
+  --clr-bg-300: #db627d;
+  --clr-bg-400: #9d338e;
+  --clr-bg-500: #8243d3;
+}
+
+body {
+  background-color: var(--clr-bg-100);
+  margin: 0;
+  padding: 0;
+}
+/* Menu 1*/
+.audio{
+  position: fixed;
+  top: 130px;
+  left: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 400px;
+  height: 150px;
+  background-color: var(--clr-bg-200);
+  border-radius: 10px;
+}
+
+.text{
+  position: relative;
+  top: 2rem;
+}
+.hls{
+  background-image: url('./assets/menu1/line.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  width: 80px;
+  height: 20px;
+}
+.btn1{
+  background-image: url('./assets//menu1/btn.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.btn-clicked3{
+  background-image: url('./assets/menu1/btn_click3.svg');
+}
+.btn-clicked2{
+  background-image: url('./assets/menu1/btn_click2.svg');
+}
+
+.elem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.close-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+/* Menu 2*/
+.rate{
+  color: white;
+  width: 18rem;
+  height: 12rem;
+  background-color: var(--clr-bg-300);
+  border-radius: 10px;
+  position: fixed;
+  top: 7rem;
+  right: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.rate h5{
+  text-align: center;
+  margin: 1rem 0;
+}
+.rate h5 span{
+  display: inline-block;
+  width: 80%;
+}
+.stars{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.grade{
+  font-size: 0.5rem;
+  position: relative;
+  top: 3rem;
+}
+.fill-star{
+  background-image: url('./assets/menu2/starfill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  border-radius: 50%;
+  border: none;
+  width: 3rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.star{
+  background-image: url('./assets/menu2/star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  border-radius: 50%;
+  border: none;
+  width: 3rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.work{
+  background-color: var(--clr-bg-500);
+  border-radius: 10px;
+  position: fixed;
+  bottom:30px;
+  right: 28%;
+  display: block;
+  width: 16rem;
+  height: 16rem;
+  color: white;
+  font-size: 0.8rem;
+}
+.work h5{
+  text-align: left;
+  padding-left: 1rem;
+  width: 80%;
+}
+.form-options{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.opt{
+  cursor: pointer;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+}
+.opt span{
+  font-size: 0.8rem;
+}
+.uncheck{
+  background-image: url('./assets/menu3/uncheck.svg');
+  display: inline-block;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.check{
+  background-image: url('./assets/menu3/checked.svg');
+  display: inline-block;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.work input[type='checkbox']{
+  display: none;
+}
+
+.work input[type='checkbox']:checked{
+  accent-color: white;
+}
+.experience{
+  background-color: var(--clr-bg-400);
+  border-radius: 10%;
+  display: block;
+  width: 16rem;
+  height: 12rem;
+  position: fixed;
+  left: 25%;
+  bottom: 20%;
+}
+.container {
+  background-image: url('./assets/background.svg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
