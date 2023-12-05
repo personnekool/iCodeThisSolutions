@@ -1,68 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component 5</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Component 5</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <a href="../../index.html">
-    <img class="close-btn" src="./assets/close.svg" alt="Close Button">
-  </a>
-  <main class="container">
-    <div class="audio">
-      <button class="btn1" id="audio-btn">
-        <span class="text">Audio</span>
-      </button>
-      <span class="hls"></span>
-      <button class="btn1" id="video-btn">
-        <span class="text">Video</span>
-      </button>
-      <span class="hls"></span>
-      <button class="btn1" id="perf-btn">
-        <span class="text">Performance</span>
-      </button>
-    </div>
-    <div class="experience">
-    </div>
-    <div class="rate">
-      <h5><span>How do you rate your service</span></h5>
-      <div class="stars">
-        <span class="s0 star"><span class="grade">Bad</span></span>
-        <span class="s1 star"></span>
-        <span class="s2 star"></span>
-        <span class="s3 star"></span>
-        <span class="s4 star"><span class="grade">Very Good</span></span>
+  <body>
+    <a href="../../index.html">
+      <img class="close-btn" src="./assets/close.svg" alt="Close Button" />
+    </a>
+    <main class="container">
+      <div class="audio">
+        <button class="btn1" id="audio-btn">
+          <span class="text">Audio</span>
+        </button>
+        <span class="hls"></span>
+        <button class="btn1" id="video-btn">
+          <span class="text">Video</span>
+        </button>
+        <span class="hls"></span>
+        <button class="btn1" id="perf-btn">
+          <span class="text">Performance</span>
+        </button>
       </div>
-      
-    </div>
-    <div class="work">
-      <h5><span>What didn't worked properly?</span></h5>
-      <form class="form-options" action="">
-        <div class="opt">
-          <span class="uncheck"></span>
-          <span>Video and Blurry</span>
+      <div class="experience">
+        <div class="lines">
+          <span class="line line-1" id="rates1"></span>
+          <span class="line line-2" id="rates2"></span>
         </div>
-        <div class="opt">
-          <span class="uncheck"></span>
-          <span>Sound wasn't working</span>
+        <h5>Rate your experience</h5>
+        <div">
+          <div class="rates">
+            <button class="rate-exp">1</button>
+            <button class="rate-exp">2</button>
+            <button class="rate-exp">3</button>
+            <button class="rate-exp">4</button>
+            <button class="rate-exp">5</button>
+          </div>
         </div>
-        <div class="opt">
-          <span class="uncheck"></span>
-          <span>App was crashing</span>
+      </div>
+      <div class="rate">
+        <h5><span>How do you rate our services</span></h5>
+        <div class="stars">
+          <span class="s0 star"><span class="grade">Bad</span></span>
+          <span class="s1 star"></span>
+          <span class="s2 star"></span>
+          <span class="s3 star"></span>
+          <span class="s4 star"><span class="grade">Very Good</span></span>
         </div>
-        <div class="opt">
-          <span class="uncheck"></span>
-          <span>Else</span>
-        </div>
-      </form>
-    </div>
-  </main>
+      </div>
+      <div class="work">
+        <h5><span>What didn't worked properly?</span></h5>
+        <form class="form-options" action="">
+          <div class="opt">
+            <span class="uncheck"></span>
+            <span>Video and Blurry</span>
+          </div>
+          <div class="opt">
+            <span class="uncheck"></span>
+            <span>Sound wasn't working</span>
+          </div>
+          <div class="opt">
+            <span class="uncheck"></span>
+            <span>App was crashing</span>
+          </div>
+          <div class="opt">
+            <span class="uncheck"></span>
+            <span>Else</span>
+          </div>
+        </form>
+      </div>
+    </main>
 
-  <script src="./main.js"></script>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>
